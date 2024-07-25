@@ -1,4 +1,4 @@
-gbq-dbt-test-project:
+gbq_dbt_test_project:
   target: dev
   outputs:
     dev:
@@ -8,4 +8,4 @@ gbq-dbt-test-project:
       dataset: bigquery-public-data.chicago_taxi_trips.taxi_trips
       threads: 4 # Must be a value of 1 or greater
       keyfile: /home/admin/gbq-dbt-test-project/gbq-dbt-project-b517e2eb3317.json
-      [OPTIONAL_CONFIG](#optional-configurations): VALUE
+    OPTIONAL_CONFIG: VALUE
