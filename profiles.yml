@@ -1,0 +1,11 @@
+gbq-dbt-test-project:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: gbq-dbt-project
+      dataset: bigquery-public-data.chicago_taxi_trips.taxi_trips
+      threads: 4 # Must be a value of 1 or greater
+      keyfile: /PATH/TO/BIGQUERY/keyfile.json
+      [OPTIONAL_CONFIG](#optional-configurations): VALUE
