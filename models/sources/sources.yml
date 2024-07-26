@@ -1,0 +1,9 @@
+version: 2
+sources:
+  - name: s_taxi_schema
+    database: bigquery-public-data
+    schema: chicago_taxi_trips
+    description: "source data from bigquery public dataset"
+    tables:
+      - name: s_taxi_table
+        identifier: taxi_trips

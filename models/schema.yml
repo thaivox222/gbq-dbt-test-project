@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: int_top3_taxi
+    description: "top 3 taxi by amount of tips in April 2018"
+    columns:
+      - name: taxi_id
+        description: "taxi car id"
+      - name: tips_sum
+        description: "the amount of tips"
+
+  - name: rep_top3_taxi_tips_by_month
+    description: "top 3 taxi by amount of tips in April 2018 with details for the following periods"
+    columns:
+      - name: taxi_id
+        description: "taxi car id"
+      - name: year_month
+        description: "year-month of period"
+      - name: tips_sum
+        description: "the amount of tips"
+      - name: tips_change
+        description: "percent change tips from last month"
