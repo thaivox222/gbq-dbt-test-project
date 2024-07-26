@@ -5,7 +5,9 @@ gbq_dbt_test_project:
       type: bigquery
       method: service-account
       project: gbq-dbt-project
-      dataset: bigquery-public-data.chicago_taxi_trips.taxi_trips
+      dataset: taxi_trips_ch
+      #location: europe-west3
+      location: US
       threads: 4 # Must be a value of 1 or greater
       keyfile: /home/admin/gbq-dbt-test-project/gbq-dbt-project-b517e2eb3317.json
     OPTIONAL_CONFIG: VALUE

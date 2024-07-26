@@ -34,5 +34,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   gbq_dbt_test_project:
     # Config indicated by + and applies to all files under models/example/
-    example:
+    sources:
       +materialized: table
+
